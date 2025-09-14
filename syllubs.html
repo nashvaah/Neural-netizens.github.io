@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="syll.css">
+  <title>Academics - Syllabus</title>
+</head>
+<body>
+  <h1>ACADEMICS</h1>
+  <h2>SYLLABUS</h2>
+
+ 
+  <label for="semester">Select Semester:</label>
+  <select id="semester" onchange="showContent()">
+    <option value="">-- Select --</option>
+    <option value="s1">S1</option>
+    <option value="s3">S3</option>
+    <option value="s5">S5</option>
+    <option value="s7">S7</option>
+  </select>
+
+  <div id="s1-subjects" class="subjects" style="display:none; margin-top:20px;">
+    <label for="s1subject">Select Subject:</label>
+    <select id="s1subject" onchange="showS1PDF(this.value)">
+      <option value="">-- Select --</option>
+      <option value="algo.pdf">Algorithmic Thinking with Python</option>
+      <option value="phy for sc.pdf">Physics for Information Science</option>
+    </select>
+  </div>
+
+
+  <div id="s3-subjects" class="subjects" style="display:none; margin-top:20px;">
+    <label for="s3subject">Select Subject:</label>
+    <select id="s3subject" onchange="showS3PDF(this.value)">
+      <option value="">-- Select --</option>
+      <option value="math.pdf">Discrete Mathematical</option>
+      <option value="dsd.pdf">Digital System Design</option>
+    </select>
+  </div>
+
+<div id="s5-subjects" class="subjects" style="display:none; margin-top:20px;">
+    <label for="s5subject">Select Subject:</label>
+    <select id="s5subject" onchange="showS5PDF(this.value)">
+      <option value="">-- Select --</option>
+      <option value="dcn.pdf">Data Communication Networks</option>
+      <option value="wad.pdf">Web application Development</option>
+    </select>
+  </div>
+  
+  <div id="pdf-section" style="display:none; margin-top:20px;">
+    <h3>Subject Material (PDF)</h3>
+    <iframe id="subject-pdf" src="" width="600" height="400"></iframe>
+    <br>
+    <a id="pdf-link" href="" target="_blank">Open / Download PDF</a>
+  </div>
+
+  <script>
+    function showContent() {
+      
+      document.querySelectorAll('.subjects').forEach(div => div.style.display = "none");
+      document.getElementById("pdf-section").style.display = "none";
+
+      let sem = document.getElementById("semester").value;
+
+      if (sem === "s1") {
+        document.getElementById("s1-subjects").style.display = "block";
+      } 
+      else if (sem === "s3") {
+        document.getElementById("s3-subjects").style.display = "block";
+      }
+      else if (sem === "s5") {
+        document.getElementById("s5-subjects").style.display = "block";
+      }
+      else if (sem === "s7") {
+        showPDF("s7 it.pdf");
+      }
+    }
+
+    
+    function showPDF(pdfFile) {
+      document.getElementById("subject-pdf").src = pdfFile;
+      document.getElementById("pdf-link").href = pdfFile;
+      document.getElementById("pdf-section").style.display = "block";
+    }
+
+    
+    function showS1PDF(pdfFile) {
+      if (pdfFile) {
+        showPDF(pdfFile);
+      } else {
+        document.getElementById("pdf-section").style.display = "none";
+      }
+    }
+    function showS3PDF(pdfFile) {
+      if (pdfFile) {
+        showPDF(pdfFile);
+      } else {
+        document.getElementById("pdf-section").style.display = "none";
+      }
+    }
+
+    function showS5PDF(pdfFile) {
+      if (pdfFile) {
+        showPDF(pdfFile);
+      } else {
+        document.getElementById("pdf-section").style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

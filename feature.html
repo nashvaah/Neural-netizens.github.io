@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Menu</title>
+    <script>
+        function goToPage(selectElement) {
+            var url = selectElement.value;
+            if (url !== "") {
+                window.location.href = url;
+            }
+        }
+    </script>
+    <link href="feature.css" rel="stylesheet">
+</head>
+<body>
+    <h1>features</h1>
+    <h2>About</h2>
+    <select onchange="goToPage(this)">
+        <option value="">Select</option>
+        <option value="princi.html">Principal</option>
+        <option value="hod.html">HOD</option>
+        <option value="department.html">Department</option>
+        <option value="vandm.html">Vision and Mission</option>
+        <option value="POCO.html">Program Outcome and Course Outcome</option>
+    </select>
+
+    <h2>Academics</h2>
+    <select onchange="goToPage(this)">
+        <option value="">Select</option>
+        <option value="syllubs.html">Syllabus</option>
+    </select>
+
+    <h2>Achievements</h2>
+    <select onchange="goToPage(this)">
+        <option value="">Select</option>
+        <option value="sports.html">Sports</option>
+        <option value="arts.html">Arts</option>
+        <option value="academics.html">Academics</option>
+    </select>
+
+    <h2>Facilities</h2>
+    <select onchange="goToPage(this)">
+        <option value="">Select</option>
+        <option value="library.html">Library</option>
+        <option value="lab.html">Lab</option>
+    </select>
+
+    <h2>Students corner</h2>
+    <a href="stdcrn.html">studentscorner</a>
+
+    <h2>Association</h2>
+    <a href="asso.html">associationlink</a>
+
+    <h2>Alumni</h2>
+    <a href="alumni.html">alumnilink</a>
+
+    <h2>Accreditation</h2>
+    <a href="accreditation.html">accreditationlink</a>
+
+    <h2>it gallery</h2>
+    <a href="itgal.html">gallerylink</a>
+
+    <h2>Placement</h2>
+    <a href="placement.html">placementlink</a>
+
+    <h2>Faculties</h2>
+    <a href="faculty.html">facultieslink</a>
+
+    <h2>Notice</h2>
+    <a href="notice.html">noticelink</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body{
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    background: #1f2937;
+    color: #808080;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    margin: 0;
+}
+
+.wee{
+    padding-left: 40px;
+}
+
+.pii{
+    padding-left: 80px;
+    color: blue;
+}
+
+.pii:hover{
+    color: rgb(172, 172, 236);
+}
+
+.pii:active{
+    color: rgb(4, 4, 49);
+}
+
+.pii:visited{
+    color: rgb(53, 11, 92);
+}
+
+.piii{
+    padding-left: 80px;
+}
+
+.piii:hover{
+    color: rgb(172, 172, 236);
+}
+
+.piii:active{
+    color: rgb(4, 4, 49);
+}
+
+.piii:visited{
+    color: rgb(53, 11, 92);
+}

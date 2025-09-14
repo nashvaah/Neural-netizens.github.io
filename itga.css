@@ -1,0 +1,38 @@
+body{
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    background: #1f2937;
+    color: #808080;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    margin: 0;
+}
+
+.img-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #808080;
+    gap: 40px;
+    margin: 0 auto;  
+    border-radius: 10%;
+}
+
+.laa{
+    padding: 10px;
+    background-color: #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-row  img{
+    height: auto;
+    object-fit: cover;
+}

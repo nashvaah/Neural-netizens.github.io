@@ -1,0 +1,60 @@
+body {
+  background-color: #a9a9a9; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  background: #1f2937;   
+  color: #808080;             
+  text-align: center;    
+  padding: 20px 0;         
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;      
+}
+
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #222;
+}
+
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #111;
+}
+
+
+#semester,
+#subject {
+  display: inline-block;  
+  margin: 10px 0;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+option:checked{
+    background-color: #d3d3d3;
+    color:white;
+}
+
+.control-block {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+iframe {
+  display: block;
+
+  border: 2px solid #444;
+  border-radius: 6px;
+}
