@@ -3,7 +3,7 @@
     font-size: 16px;
     padding: 10px;
   }
-  nav ul{
+  div ul{
     flex-direction:column;
   }
 }
@@ -106,4 +106,5 @@ body {
       display: block;
 
     }
+
 
